@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-variant: small-caps;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+img {
+    height: 5%;
+    width: 5%;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #202020;
+    animation: header 2s ease-in-out
+}
+
+@keyframes header {
+    0% {
+        transform: translateY(-100%);
+    }
+    
+}
+
+.navlink {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.navlink li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0px 20px;
+    margin-right: 10px;
+    font-variant:small-caps ;
+    cursor: pointer;
+}
+
+.navlink li:hover{
+    color: red;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    width: 50%;
+    margin-top: 4%;
+    margin-left: 8%;
+    animation: content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.content h1 {
+    margin-left: 6%;
+    font-size: 80px;
+    margin-bottom: 5%;
+    color: orangered;
+}
+
+.content p {
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.but1 {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    cursor: pointer;
+    
+    background-color: yellow;
+
+
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.but2 {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 12%;
+    cursor: pointer;
+    background-color: yellow;
+
+}
+
+.but2:hover{
+    background-color: orangered;
+    color: black;
+}
+
+
+.but1:hover{
+    background-color: orangered;
+    color: black;
+}
+
+.anima {
+    width: 50%;
+    margin-top:3%;
+    z-index: -1;
+
+}
+
+.anima img {
+    width: 40rem ;
+    height: 20rem;
+    margin-top: 20%;
+    animation: car 2s ease-in-out;
+}
+
+@keyframes car {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-250%);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .anima  {
+        width: 100%;
+        position: absolute;
+        left: -3%;
+        bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .anima img {
+        width: 20rem;
+        height: 10rem;
+    }
+    img {
+        height: 10%;
+        width: 10%;
+    }
+    .navlink li{
+        font-size: 20px;
+    }
+    
+}
+
